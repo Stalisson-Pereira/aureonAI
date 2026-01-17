@@ -910,7 +910,7 @@ textarea:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.6rem 0.85rem;
+    padding: 0.65rem;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: rgba(15, 15, 24, 0.35);
@@ -918,6 +918,14 @@ textarea:focus {
     text-decoration: none;
     font-weight: 750;
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    display: block;
+    fill: currentColor;
 }
 
 .social-link:hover {

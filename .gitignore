@@ -11,6 +11,7 @@ Thumbs.db
 
 # IDE / tooling
 .trae/
+.vercel/
 
 # Node (caso seja adicionado no futuro)
 node_modules/

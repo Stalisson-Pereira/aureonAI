@@ -1,52 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aureon AI: uma landing page 3D com foco em performance, conversão e experiência." />
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@300;500;700&display=swap"
         rel="stylesheet">
-    <title>Aureon AI 3d Website</title>
+    <title>Aureon AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <spline-viewer url="https://prod.spline.design/eMhWkeQNi7aUC6AY/scene.splinecode"></spline-viewer>
     <nav>
-        <div class="logo">AureonAI</div>
-        <div class="nav-links">
-            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Showcase</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
+        <a class="logo" href="#home">AureonAI</a>
+        <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#features">Recursos</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#pricing">Planos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="nav-cta">Falar com a gente</a>
         </div>
     </nav>
-    <section class="hero">
+    <header class="hero" id="home">
         <div class="overplay"></div>
         <div class="content">
+            <p class="eyebrow">Design + IA + 3D em um fluxo simples</p>
             <h1 class="title">
-                Revolutionzie Your Digital Presence with
+                Transforme sua presença digital com
                 <br> <span class="gradient-text">Aureon AI</span>
             </h1>
             <p class="subtitle">
-                The most advanced AI-powered web design platform that transforms your ideas into stunning 3D
-                experiences. No coding required — just limitless creativity.
+                Uma experiência 3D moderna com seções prontas para conversão: prova social, recursos, vitrine,
+                planos, FAQ e contato. Tudo com a estética original do seu projeto.
             </p>
             <div class="cta-container">
-                <button class="cta-btn">
-                    <span>Start Creation Free</span>
-                </button>
+                <a class="cta-btn attention" href="#pricing">
+                    <span>Começar agora</span>
+                </a>
+                <a class="secondary-btn" href="#features">Ver recursos</a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric">
+                    <div class="metric-value">3D</div>
+                    <div class="metric-label">Imersão sem pesar a interface</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">IA</div>
+                    <div class="metric-label">Conteúdo e estrutura guiados</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">UX</div>
+                    <div class="metric-label">Cards, planos e FAQ prontos</div>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main>
+        <section class="section trust">
+            <div class="container">
+                <p class="section-kicker">Confiado por equipes que querem presença digital com impacto</p>
+                <div class="logo-strip" aria-label="Marcas parceiras (exemplo)">
+                    <span class="logo-pill">Studio Nova</span>
+                    <span class="logo-pill">Orbit Labs</span>
+                    <span class="logo-pill">Vanta</span>
+                    <span class="logo-pill">Pulse</span>
+                    <span class="logo-pill">Lumen</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <h2 class="section-title">Tudo o que você precisa para lançar uma landing page forte</h2>
+                <p class="section-subtitle">O visual continua sendo Aureon AI. A estrutura ganha profundidade e novas funções.</p>
+                <div class="card-grid">
+                    <article class="card reveal">
+                        <h3 class="card-title">Seções que convertem</h3>
+                        <p class="card-text">Prova social, vitrine, pricing e FAQ prontos para guiar a decisão.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3 class="card-title">Navegação inteligente</h3>
+                        <p class="card-text">Menu responsivo, scroll suave e link ativo conforme a seção visível.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3 class="card-title">Motion com controle</h3>
+                        <p class="card-text">Animações no scroll com respeito à preferência de redução de movimento.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3 class="card-title">Cards com estética glass</h3>
+                        <p class="card-text">Layout consistente com sombras e gradientes, sem perder leveza.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3 class="card-title">FAQ acessível</h3>
+                        <p class="card-text">Acordeão com ARIA, teclado e estados claros para usabilidade.</p>
+                    </article>
+                    <article class="card reveal">
+                        <h3 class="card-title">Contato direto</h3>
+                        <p class="card-text">Formulário com validação básica e feedback visual ao enviar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section showcase" id="showcase">
+            <div class="container">
+                <h2 class="section-title">Showcase</h2>
+                <p class="section-subtitle">Exemplos de como o mesmo estilo pode comunicar produtos diferentes.</p>
+                <div class="showcase-grid">
+                    <article class="showcase-card reveal">
+                        <div class="showcase-media" aria-hidden="true"></div>
+                        <h3 class="card-title">Produto</h3>
+                        <p class="card-text">Hero 3D + features em grid + planos com destaque para o recomendado.</p>
+                    </article>
+                    <article class="showcase-card reveal">
+                        <div class="showcase-media alt" aria-hidden="true"></div>
+                        <h3 class="card-title">Serviços</h3>
+                        <p class="card-text">Prova social no topo + vitrine de cases + CTA final com formulário.</p>
+                    </article>
+                    <article class="showcase-card reveal">
+                        <div class="showcase-media accent" aria-hidden="true"></div>
+                        <h3 class="card-title">Comunidade</h3>
+                        <p class="card-text">FAQ completo + seção de benefícios + convite para entrar em contato.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pricing" id="pricing">
+            <div class="container">
+                <div class="pricing-head">
+                    <div>
+                        <h2 class="section-title">Planos</h2>
+                        <p class="section-subtitle">Uma estrutura clara para vender, com espaço para você ajustar preços e benefícios.</p>
+                    </div>
+                    <div class="pricing-toggle" aria-label="Alternar período de cobrança">
+                        <span class="toggle-label" data-period="monthly">Mensal</span>
+                        <button class="toggle" type="button" aria-pressed="false" aria-label="Alternar para anual"></button>
+                        <span class="toggle-label" data-period="yearly">Anual</span>
+                        <span class="toggle-badge">Economize</span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="price-card reveal" data-plan="starter">
+                        <h3 class="price-title">Starter</h3>
+                        <p class="price-desc">Para testar a estética e publicar rápido.</p>
+                        <div class="price" data-monthly="R$ 0" data-yearly="R$ 0">R$ 0</div>
+                        <ul class="price-list">
+                            <li>Hero 3D</li>
+                            <li>Seções base</li>
+                            <li>FAQ e contato</li>
+                        </ul>
+                        <a class="price-cta" href="#contact">Começar</a>
+                    </article>
+
+                    <article class="price-card featured reveal" data-plan="pro">
+                        <div class="price-tag">Recomendado</div>
+                        <h3 class="price-title">Pro</h3>
+                        <p class="price-desc">Para converter com mais consistência.</p>
+                        <div class="price" data-monthly="R$ 89" data-yearly="R$ 590">R$ 89</div>
+                        <ul class="price-list">
+                            <li>Animações no scroll</li>
+                            <li>Alternância mensal/anual</li>
+                            <li>Vitrine em cards</li>
+                        </ul>
+                        <a class="price-cta" href="#contact">Quero o Pro</a>
+                    </article>
+
+                    <article class="price-card reveal" data-plan="enterprise">
+                        <h3 class="price-title">Enterprise</h3>
+                        <p class="price-desc">Para times e integrações sob medida.</p>
+                        <div class="price" data-monthly="Sob consulta" data-yearly="Sob consulta">Sob consulta</div>
+                        <ul class="price-list">
+                            <li>Personalização total</li>
+                            <li>Componentes extras</li>
+                            <li>Suporte prioritário</li>
+                        </ul>
+                        <a class="price-cta" href="#contact">Falar com vendas</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq" id="faq">
+            <div class="container">
+                <h2 class="section-title">Perguntas frequentes</h2>
+                <p class="section-subtitle">Respostas rápidas para reduzir atrito e aumentar confiança.</p>
+                <div class="faq-list">
+                    <div class="faq-item reveal">
+                        <button class="faq-question" id="faq-q-1" aria-expanded="false" aria-controls="faq-a-1">
+                            Preciso saber programar para usar esta estrutura?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+                            Não. Você pode editar textos, cores e seções direto no HTML/CSS. As interações já ficam prontas no JavaScript.
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-question" id="faq-q-2" aria-expanded="false" aria-controls="faq-a-2">
+                            O 3D vai deixar o site pesado?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+                            A cena fica no background e o conteúdo é priorizado. Além disso, as animações respeitam preferências de acessibilidade.
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-question" id="faq-q-3" aria-expanded="false" aria-controls="faq-a-3">
+                            Posso trocar textos, preços e seções depois?
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+                            Sim. A ideia é ser um modelo modular: você remove, reordena e adiciona cards sem quebrar o layout.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <h2 class="section-title">Vamos construir sua próxima página?</h2>
+                    <p class="section-subtitle">Envie uma mensagem e eu retorno com um caminho rápido para transformar a ideia em uma landing 3D.</p>
+                    <div class="contact-highlights">
+                        <div class="highlight">Resposta em até 24h</div>
+                        <div class="highlight">Ajustes de copy e layout</div>
+                        <div class="highlight">Integrações sob demanda</div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <label class="field">
+                        <span class="label">Nome</span>
+                        <input name="name" autocomplete="name" required />
+                    </label>
+                    <label class="field">
+                        <span class="label">Email</span>
+                        <input name="email" type="email" autocomplete="email" required />
+                    </label>
+                    <label class="field">
+                        <span class="label">Mensagem</span>
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <button class="cta-btn" type="submit"><span>Enviar</span></button>
+                    <div class="form-note" id="form-note" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">AureonAI</div>
+                <p class="footer-text">Uma landing 3D com estrutura completa para conversão.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#features">Recursos</a>
+                <a href="#pricing">Planos</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="footer-social" aria-label="Redes sociais">
+                <a class="social-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok da Aureon AI">TikTok</a>
+                <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Aureon AI">Instagram</a>
+                <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Aureon AI">Facebook</a>
+                <a class="social-link" href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Aureon AI">WhatsApp</a>
+            </div>
+            <div class="footer-meta">© <span id="year"></span> AureonAI</div>
+        </div>
+    </footer>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.39/build/spline-viewer.js"></script>
+    <script src="index.js" defer></script>
 
 </body>
 
